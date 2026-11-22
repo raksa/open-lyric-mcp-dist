@@ -1,0 +1,63 @@
+{
+  "name": "open-lyric-mcp",
+  "version": "0.1.18",
+  "description": "MCP server for Open Lyric song notation: validate, analyze, transpose, edit, render and export songs (DOCX, PowerPoint, HTML) from any MCP client.",
+  "license": "MIT",
+  "author": "raksa <eng.raksa@gmail.com>",
+  "homepage": "https://github.com/raksa/open-lyric-mcp-dist#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raksa/open-lyric-mcp-dist.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raksa/open-lyric-mcp-dist/issues"
+  },
+  "type": "module",
+  "mcpName": "io.github.raksa/open-lyric-mcp",
+  "bin": {
+    "open-lyric-mcp": "dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./*.md": "./*.md",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "*.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "open-lyric",
+    "lyrics",
+    "chords",
+    "songwriting",
+    "chord-chart"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@tombatossals/chords-db": "^0.5.1",
+    "@tonaljs/chord": "^6.1.2",
+    "@tonaljs/interval": "^5.1.0",
+    "@tonaljs/key": "^4.11.2",
+    "@tonaljs/note": "^4.12.1",
+    "docx": "^9.6.1",
+    "linkedom": "^0.18.15",
+    "marked": "^17.0.5",
+    "zod": "^4.6.7"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

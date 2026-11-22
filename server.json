@@ -1,0 +1,33 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.raksa/open-lyric-mcp",
+  "title": "Open Lyric",
+  "description": "Validate, transpose, edit, render and export songs written in Open Lyric notation.",
+  "repository": {
+    "url": "https://github.com/raksa/open-lyric-mcp-dist",
+    "source": "github"
+  },
+  "version": "0.1.18",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "open-lyric-mcp",
+      "version": "0.1.18",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "OPEN_LYRIC_MCP_ROOTS",
+          "description": "Folders the file tools may use, besides the client's roots — a path list (':'-separated; ';' on Windows). With neither, the working directory.",
+          "isRequired": false
+        },
+        {
+          "name": "OPEN_LYRIC_MCP_READ_ONLY",
+          "description": "Set to 1 to never write a file: edits return the new text instead.",
+          "isRequired": false
+        }
+      ]
+    }
+  ]
+}
