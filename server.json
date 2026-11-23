@@ -7,12 +7,12 @@
     "url": "https://github.com/raksa/open-lyric-mcp-dist",
     "source": "github"
   },
-  "version": "0.1.18",
+  "version": "0.1.19",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "open-lyric-mcp",
-      "version": "0.1.18",
+      "version": "0.1.19",
       "transport": {
         "type": "stdio"
       },

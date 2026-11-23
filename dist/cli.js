@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { a as OPEN_LYRIC_MCP_VERSION, i as createOpenLyricMcpServer, n as runStdioServer, t as runHttpServer } from "./chunks/transports-CcOWNL0M.js";
+import { a as OPEN_LYRIC_MCP_VERSION, i as createOpenLyricMcpServer, n as runStdioServer, t as runHttpServer } from "./chunks/transports-DqYB-keg.js";
 import { format } from "node:util";
 //#region src/mcp-common/console.ts
 /**
